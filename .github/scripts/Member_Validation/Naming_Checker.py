@@ -1,7 +1,6 @@
 import json
 import os
 import re
-import subprocess
 
 # Global variable to store problem data
 problems = {}
@@ -20,31 +19,49 @@ def check_duplicate(items):
             print(f"There is a Duplicate with {items[i]}")
             exit(1)
 
-# Get the list of modified files from the latest commit
-def get_modified_files():
-    result = subprocess.run(['git', 'diff', '--name-only', 'HEAD~1'], stdout=subprocess.PIPE)
-    modified_files = result.stdout.decode('utf-8').split()
-    return [file for file in modified_files if os.path.isfile(file)]
+# Get folders in a directory
+def get_folders(path):
+    return [f for f in os.listdir(path) if os.path.isdir(os.path.join(path, f))]
+
+# Get files in a directory
+def get_files(path):
+    return [f for f in os.listdir(path) if os.path.isfile(os.path.join(path, f))]
 
 # Check if file names match the required pattern
-def check_file(file_path):
-    if file_path.endswith(".gitkeep") or file_path.endswith(".md"):
-        return
-    file_name = os.path.basename(file_path)
-    if not re.match(r"^\d{2}- .+\([A-Za-z0-9 -_]+\)\.\b(cpp|rb|py|js|ts|c|java|php|dart|cs|exs)\b$", file_name):
-        print(f"File {file_name} name is not valid")
-        exit(1)
+def check_files(folder_path):
+    files = get_files(folder_path)
+    for file in files:
+        if file == ".gitkeep" or file.endswith(".md"):
+            continue
+        if not re.match(r"^\d{2}- .+\([A-Za-z0-9 -_]+\)\.\b(cpp|rb|py|js|ts|c|java|php|dart|cs|exs)\b$", file):
+            print(f"File {file} name is not valid")
+            exit(1)
+    check_duplicate(files)
+
+# Traverse the directory structure recursively
+def traverse_directory(path):
+    folders = get_folders(path)
+    for folder in folders:
+        folder_path = os.path.join(path, folder)
+        check_files(folder_path)
+        traverse_directory(folder_path)
 
 # Main function for the naming checker
 def naming_checker_main():
     global problems
     problems = read_data()
 
-    modified_files = get_modified_files()
-    for file in modified_files:
-        check_file(file)
+    # Start checking from the 'Part 1' directory
+    ps_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../Part 1 (Dart)/Dart Basics/Problem-Solving"))
+    traverse_directory(ps_path)
 
-    print("All modified files are valid")
+    tasks_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../Part 1 (Dart)/Dart Basics/Tasks"))
+    traverse_directory(tasks_path)
+
+    oop_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../Part 1 (Dart)/OOP"))
+    traverse_directory(oop_path)
+
+    print("All files are valid")
 
 if __name__ == "__main__":
     naming_checker_main()
