@@ -1,0 +1,135 @@
+{
+  "Part 1 (Dart)": {
+    "Dart Basics": {
+      "Problem Solving": [
+        {
+          "problemNum": "01",
+          "title": "Way Too Long Words"
+        },
+        {
+          "problemNum": "02",
+          "title": "Watermelon"
+        },
+        {
+          "problemNum": "03",
+          "title": "Team"
+        },
+        {
+          "problemNum": "04",
+          "title": "Soldier and Bananas"
+        },
+        {
+          "problemNum": "05",
+          "title": "Anton and Danik"
+        },
+        {
+          "problemNum": "06",
+          "title": "Bear and Big Brother"
+        },
+        {
+          "problemNum": "07",
+          "title": "Word"
+        },
+        {
+          "problemNum": "08",
+          "title": "Magnets"
+        },
+        {
+          "problemNum": "09",
+          "title": "Elephant"
+        },
+        {
+          "problemNum": "10",
+          "title": "Try Catch"
+        },
+        {
+          "problemNum": "11",
+          "title": "Exception Handling (Try-catch)"
+        },
+        {
+          "problemNum": "12",
+          "title": "Functions"
+        },
+        {
+          "problemNum": "13",
+          "title": "Day 19 Interfaces"
+        },
+        {
+          "problemNum": "14",
+          "title": "Scope"
+        },
+        {
+          "problemNum": "15",
+          "title": "Class vs. Instance"
+        },
+        {
+          "problemNum": "16",
+          "title": "Solve Me First"
+        },
+        {
+          "problemNum": "17",
+          "title": "Random Number Generator"
+        },
+        {
+          "problemNum": "18",
+          "title": "Day 2 Operators"
+        }
+      ],
+      "Tasks": [
+        {
+          "taskNum": "01",
+          "title": "List Sorting"
+        },
+        {
+          "taskNum": "02",
+          "title": "Collection Task"
+        },
+        {
+          "taskNum": "03",
+          "title": "Lookup in Map"
+        },
+        {
+          "taskNum": "04",
+          "title": "Union and Intersection"
+        },
+        {
+          "taskNum": "05",
+          "title": "Null-aware Operators"
+        },
+        {
+          "taskNum": "06",
+          "title": "Circle Calculations"
+        },
+        {
+          "taskNum": "07",
+          "title": "Update List Element"
+        },
+        {
+          "taskNum": "08",
+          "title": "Password Validation"
+        },
+        {
+          "taskNum": "09",
+          "title": "List Type Filtering"
+        },
+        {
+          "taskNum": "10",
+          "title": "Dynamic Type Processor"
+        },
+        {
+          "taskNum": "11",
+          "title": "User Input Validation"
+        }
+      ]
+    },
+    "OOP": {
+      "Tasks": [
+        {
+          "taskNum": "",
+          "title": ""
+        }
+      ]
+    }
+  },
+  "Part 2 (Flutter)": {}
+}
