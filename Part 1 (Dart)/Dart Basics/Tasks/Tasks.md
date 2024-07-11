@@ -1,3 +1,15 @@
+1- List Sorting
+2- Lookup in Map
+3- Collection Task
+4- Union and Intersection
+5- Null-aware Operators
+6- Circle Calculations
+7- Update List Element
+8- Password Validation
+9- List Type Filtering
+10- Dynamic Type Processor
+11- User Input Validation
+
 ### 1- Variables, Data Types, Lists, Maps, Sets, Null Safety, Comments
 1- List Sorting 1
 2- Lookup in Map 2
