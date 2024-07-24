@@ -40,39 +40,27 @@
         },
         {
           "problemNum": "10",
-          "title": "Try Catch"
+          "title": "Searching"
         },
         {
           "problemNum": "11",
-          "title": "Exception Handling (Try-catch)"
+          "title": "Sereja and Dima"
         },
         {
           "problemNum": "12",
-          "title": "Functions"
+          "title": "GCD"
         },
         {
           "problemNum": "13",
-          "title": "Day 19 Interfaces"
+          "title": "Average"
         },
         {
           "problemNum": "14",
-          "title": "Scope"
+          "title": "Timon and Pumbaa"
         },
         {
           "problemNum": "15",
-          "title": "Class vs. Instance"
-        },
-        {
-          "problemNum": "16",
-          "title": "Solve Me First"
-        },
-        {
-          "problemNum": "17",
-          "title": "Random Number Generator"
-        },
-        {
-          "problemNum": "18",
-          "title": "Day 2 Operators"
+          "title": "Front - End"
         }
       ],
       "Tasks": [
@@ -125,8 +113,80 @@
     "OOP": {
       "Tasks": [
         {
-          "taskNum": "",
-          "title": ""
+          "taskNum": "01",
+          "title": "Class & Object1"
+        },
+        {
+          "taskNum": "02",
+          "title": "Class & Object2"
+        },
+        {
+          "taskNum": "03",
+          "title": "Default Constructor"
+        },
+        {
+          "taskNum": "04",
+          "title": "Parametrized Constructor"
+        },
+        {
+          "taskNum": "05",
+          "title": "Named Constructor"
+        },
+        {
+          "taskNum": "06",
+          "title": "Constant Constructor"
+        },
+        {
+          "taskNum": "07",
+          "title": "Factory Constructor"
+        },
+        {
+          "taskNum": "08",
+          "title": "Encapsulation1"
+        },
+        {
+          "taskNum": "09",
+          "title": "Encapsulation2"
+        },
+        {
+          "taskNum": "10",
+          "title": "Single Inheritance"
+        },
+        {
+          "taskNum": "11",
+          "title": "Multiple Inheritance"
+        },
+        {
+          "taskNum": "12",
+          "title": "Hierarchical Inheritance"
+        },
+        {
+          "taskNum": "13",
+          "title": "Inheritance of Contructor and Super Keyword"
+        },
+        {
+          "taskNum": "14",
+          "title": "Polymorphism"
+        },
+        {
+          "taskNum": "15",
+          "title": "Abstract Class"
+        },
+        {
+          "taskNum": "16",
+          "title": "Interface Class"
+        },
+        {
+          "taskNum": "17",
+          "title": "Mixin"
+        },
+        {
+          "taskNum": "18",
+          "title": "ENUM"
+        },
+        {
+          "taskNum": "19",
+          "title": "Generics"
         }
       ]
     }
