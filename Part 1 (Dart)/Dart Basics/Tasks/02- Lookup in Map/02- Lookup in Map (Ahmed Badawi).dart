@@ -1,3 +1,5 @@
+// Author: Ahmed Badawi
+
 void lookUpMap(Map<String, dynamic> map, String key){
   if (map.containsKey(key)){
     print(map[key]);
