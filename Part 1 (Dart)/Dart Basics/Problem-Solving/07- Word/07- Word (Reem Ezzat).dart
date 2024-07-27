@@ -3,16 +3,23 @@
 import 'dart:io';
 
 void main() {
-  int? first_wieght = int.parse(stdin.readLineSync()!);
-  int? second_wieght = int.parse(stdin.readLineSync()!);
-  for (int num_of_years = 1; num_of_years < 10; num_of_years++) {
-    if (first_wieght != null && second_wieght != null) {
-      first_wieght = first_wieght * 3;
-      second_wieght = second_wieght * 2;
-      if (first_wieght > second_wieght) {
-        print(num_of_years);
-        break;
-      }
+// ASCII code -> lowercase 97 -> 122
+//                uppercase 65 -> 90
+  String? s = stdin.readLineSync()!;
+  List<int> word = s.codeUnits;
+  int lowercase_counter = 0;
+  int uppercase_counter = 0;
+  for (int i = 0; i < word.length; i++) {
+    if (word[i] >= 97 && word[i] <= 122) {
+      lowercase_counter++;
+    } else {
+      uppercase_counter++;
     }
   }
+  if (lowercase_counter >= uppercase_counter) {
+    s = s.toLowerCase();
+  } else {
+    s = s.toUpperCase();
+  }
+  print(s);
 }
