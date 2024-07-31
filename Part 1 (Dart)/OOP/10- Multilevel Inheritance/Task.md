@@ -1,6 +1,6 @@
 ## INHERITANCE
 
-### 11- Multiple Inheritance
+### 11- Multilevel Inheritance
 
 ```
 THERE IS CLASS NAMED PERSON WITH TWO PROPERTIES
