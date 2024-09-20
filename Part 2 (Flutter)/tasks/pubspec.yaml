@@ -14,6 +14,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   flutter_launcher_icons: ^0.13.1
   device_preview: ^1.2.0
+  flutter_native_splash: ^2.4.1
 
 flutter_launcher_icons:
   android: "launcher_icon"
@@ -35,10 +36,10 @@ flutter:
 
   uses-material-design: true
 
-  assets:
-    - assets/images/
-    - assets/icons/
-    - assets/logo/
+  # assets:
+  #   - assets/images/
+  #   - assets/icons/
+  #   - assets/logo/
 
   # fonts:
   #   - family: Schyler
